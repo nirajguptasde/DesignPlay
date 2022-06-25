@@ -19,7 +19,7 @@ FONT SIZE SYSTEM (px)
 /* ------------------------ */
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 
@@ -28,12 +28,37 @@ body {
   margin:0 auto;
 }
 
+#top-bar {
+  background-color: #e7e7e7;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-content: center;
+  padding:24px 0;
+}
+
+.site-menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap:32px;
+}
+
+nav a {
+  text-decoration: none;
+  color:rgb(67, 34, 5)
+}
+
 header, section {
   margin-bottom: 48px;
 }
 
 h2 {
   margin-bottom:48px;
+  font-size: 36px;
+  letter-spacing: -0.5px;
 }
 
 .grid-3-cols {
@@ -62,10 +87,15 @@ header {
 
 h1 {
   margin-bottom: 24px;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -1px;
 }
 
 .header-text {
   margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 img {
@@ -80,10 +110,12 @@ img {
 
 .features-title {
   margin-bottom: 16px;
+  font-size: 20px;
 }
 
 .features-text {
-
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 /* Testimonial */ 
@@ -99,11 +131,14 @@ img {
 
 .testimonial-box h2 {
   margin-bottom: 24px;
+  font-size: 24px;
 }
 
 .testimonial-text {
   font-style: italic;
   margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 /* Chairs */
@@ -114,6 +149,7 @@ img {
 
 h3 {
   margin-bottom:24px;
+  font-size: 20px;
 }
 
 .chair-details {
@@ -122,8 +158,7 @@ h3 {
 }
 
 .chair-details li {
-  display: flex;
-  align-items: center;
+   align-items: center;
   gap:12px;
   margin-bottom: 24px;
 }
@@ -139,8 +174,10 @@ h3 {
 .chair-price {
   display: flex;
   justify-content: space-between;
+  font-size:20px;
 }
 
 footer {
   margin-bottom: 48px;
+  font-size: 14px;
 }
